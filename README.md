@@ -32,7 +32,5 @@ It is all made with Only FLUTTER
 ![image](https://user-images.githubusercontent.com/64710848/144056007-b4e67977-c768-4e0f-ae58-8c049c35d2d1.png)
 
 
-![untitled](https://user-images.githubusercontent.com/64710848/144056037-2eaefb08-49ca-4c7c-8960-1ec39f3c263f.gif)
-
 
 
