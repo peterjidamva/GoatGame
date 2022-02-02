@@ -1,11 +1,12 @@
 import 'dart:async';
 // import 'dart:ui';
 // import 'package:drift_game/fire.dart';
-import 'package:drift_game/gameOver.dart';
+import 'package:drift_game/game_end/gameOver.dart';
 import 'package:drift_game/goat.dart';
-import 'package:drift_game/knife.dart';
-import 'package:drift_game/leaf.dart';
+import 'package:drift_game/barriers/knife.dart';
+import 'package:drift_game/points/leaf.dart';
 import 'package:flutter/material.dart';
+import 'package:time_elapsed/time_elapsed.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,6 +29,16 @@ class _HomePageState extends State<HomePage> {
   bool isGameNotOver = true;
   String direction = "right";
   static bool holding = false;
+
+  int timeElapsed() {
+    int i = 0;
+    while (isGameNotOver) {
+      return i;
+    }
+    i++;
+
+    return 4;
+  }
 
   void eatLeaf() {
     if ((goatX - leafX).abs() < 0.05 && (goatY - leafY).abs() < 0.05) {
@@ -186,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "111",
+                                  timeElapsed().toString(),
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
