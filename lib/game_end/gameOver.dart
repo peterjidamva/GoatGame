@@ -10,7 +10,7 @@ class GameOver extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 1,
       height: MediaQuery.of(context).size.height * 1,
       child: Container(
-        child: Image.asset('goat/images/GameOVERR.png'),
+        child: Image.asset('goat/images/gameOver.png'),
       ),
     );
   }
