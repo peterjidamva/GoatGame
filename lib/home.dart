@@ -190,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: [
                                 Text(
-                                  "DRIFT LEVEL",
+                                  "LEVEL",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
