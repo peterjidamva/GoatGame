@@ -1,6 +1,4 @@
 import 'dart:async';
-// import 'dart:ui';
-// import 'package:drift_game/fire.dart';
 import 'package:drift_game/game_end/gameOver.dart';
 import 'package:drift_game/goat.dart';
 import 'package:drift_game/barriers/knife.dart';
@@ -25,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   double goatNomoSize = 75;
   double time = 0;
   double height = 0;
-  double initalHeight = goatY;
+  double initalHeight = goatY
   bool isGameNotOver = true;
   String direction = "right";
   static bool holding = false;
